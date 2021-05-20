@@ -4,7 +4,8 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM debian:buster-slim
+FROM php:7.2-apache
+COPY src/ /var/www/html/
 
 # prevent Debian's PHP packages from being installed
 # https://github.com/docker-library/php/pull/542
